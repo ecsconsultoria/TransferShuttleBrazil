@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transfer & Shuttle Brazil - Serviços de transporte premium em todo o Brasil. Ônibus, transfers e serviços VIP.">
+    <meta name="keywords" content="transfer, shuttle, transporte, Brasil, aeroporto, premium">
+    <meta property="og:title" content="Transfer & Shuttle Brazil - Transporte Premium">
+    <meta property="og:description" content="Serviços de transporte de qualidade em todo o Brasil">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <title>Transfer & Shuttle Brazil - Transporte Premium em todo o Brasil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Transfer & <span>Shuttle</span> Brazil</a>
+            <ul class="nav-menu">
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#booking">Reservar</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact" class="cta-button">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Elevando Cada Jornada</h1>
+            <p>Seu parceiro confiável para transporte premium em todo o Brasil. Ônibus, transfers e serviços VIP com conforto e segurança.</p>
+            <a href="#booking" class="btn btn-primary">Reservar Agora</a>
+            <a href="#contact" class="btn btn-secondary">Falar com Especialista</a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos <span>Serviços</span></h2>
+            
+            <div class="services-grid">
+                <!-- Service 1: Transfers -->
+                <div class="service-card">
+                    <div class="service-icon">🚐</div>
+                    <h3>Transfers</h3>
+                    <p>Transporte confortável de um ponto a outro com segurança e pontualidade garantidas.</p>
+                    <a href="#booking">Saiba mais →</a>
+                </div>
+
+                <!-- Service 2: Airport Transfers -->
+                <div class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Transfers Aeroporto</h3>
+                    <p>Serviço especializado para aeroportos com assistência 24/7 e pontualidade garantida.</p>
+                    <a href="#booking">Saiba mais →</a>
+                </div>
+
+                <!-- Service 3: By the Hour -->
+                <div class="service-card">
+                    <div class="service-icon">⏰</div>
+                    <h3>Transporte por Hora</h3>
+                    <p>Aluguel de ônibus/van por hora para eventos, passeios e excursões.</p>
+                    <a href="#booking">Saiba mais →</a>
+                </div>
+
+                <!-- Service 4: Shuttle Service -->
+                <div class="service-card">
+                    <div class="service-icon">🚌</div>
+                    <h3>Serviço Shuttle</h3>
+                    <p>Transporte contínuo e confiável para grupos e passageiros frequentes.</p>
+                    <a href="#booking">Saiba mais →</a>
+                </div>
+
+                <!-- Service 5: VIP Services -->
+                <div class="service-card">
+                    <div class="service-icon">👔</div>
+                    <h3>Serviços VIP</h3>
+                    <p>Atendimento premium com serviços personalizados para clientes exclusivos.</p>
+                    <a href="#booking">Saiba mais →</a>
+                </div>
+
+                <!-- Service 6: Corporate Solutions -->
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Soluções Corporativas</h3>
+                    <p>Pacotes customizados para empresas com frota gerenciada e suporte dedicado.</p>
+                    <a href="#booking">Saiba mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Reserve Agora</h2>
+            
+            <form class="booking-form">
+                <h2>Faça sua reserva em 3 passos simples</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="service">Tipo de Serviço</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="transfer">Transfer</option>
+                            <option value="airport">Transfer Aeroporto</option>
+                            <option value="hourly">Por Hora</option>
+                            <option value="shuttle">Shuttle</option>
+                            <option value="vip">VIP</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pickup-date">Data de Saída</label>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pickup-time">Hora de Saída</label>
+                        <input type="time" id="pickup-time" name="pickup-time" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup-location">Local de Saída</label>
+                        <input type="text" id="pickup-location" name="pickup-location" placeholder="Digite o local de saída" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dropoff-location">Local de Chegada</label>
+                        <input type="text" id="dropoff-location" name="dropoff-location" placeholder="Digite o local de chegada" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="passengers">Número de Passageiros</label>
+                        <input type="number" id="passengers" name="passengers" min="1" max="60" value="1" required>
+                    </div>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">Buscar Disponibilidade</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="about" class="features">
+        <div class="container">
+            <h2 class="section-title">Por que escolher <span>Transfer & Shuttle Brazil</span>?</h2>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-number">1️⃣</div>
+                    <h3>Fácil de Usar</h3>
+                    <p>Reserve em apenas 3 passos simples com nossa plataforma intuitiva.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-number">2️⃣</div>
+                    <h3>Eficiente</h3>
+                    <p>Serviços personalizados cuidadosamente planejados para sua comodidade.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-number">3️⃣</div>
+                    <h3>Confiável</h3>
+                    <p>Pontuais, seguros e com rigoroso controle de qualidade em todos os serviços.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-number">4️⃣</div>
+                    <h3>Global</h3>
+                    <p>Cobertura em todo o Brasil com frota moderna e suporte 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">27</div>
+                <div class="stat-label">Estados Cobertos</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">500</div>
+                <div class="stat-label">Cidades Atendidas</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">150</div>
+                <div class="stat-label">Aeroportos</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">10000</div>
+                <div class="stat-label">Passageiros Mensais</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIALS -->
+    <section class="features" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes <span>dizem</span></h2>
+            
+            <div class="services-grid" style="margin-top: 50px;">
+                <div class="service-card">
+                    <p style="font-style: italic; margin-bottom: 20px;">"Excelente serviço, pontualidade impecável. Recomendo para todos!"</p>
+                    <strong>João Silva</strong>
+                    <p style="color: #999; font-size: 0.9em;">Executivo em São Paulo</p>
+                </div>
+
+                <div class="service-card">
+                    <p style="font-style: italic; margin-bottom: 20px;">"Conforto e segurança garantidos. A melhor opção para transfers aeroporto."</p>
+                    <strong>Maria Santos</strong>
+                    <p style="color: #999; font-size: 0.9em;">Executiva em Rio de Janeiro</p>
+                </div>
+
+                <div class="service-card">
+                    <p style="font-style: italic; margin-bottom: 20px;">"Serviço profissional, excelentes condições dos veículos. Voltaria com certeza!"</p>
+                    <strong>Carlos Costa</strong>
+                    <p style="color: #999; font-size: 0.9em;">Turista em Minas Gerais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Pronto para elevar sua jornada?</h2>
+            <p>Reserve agora e experimente o melhor em transporte premium no Brasil.</p>
+            <a href="#booking" class="btn btn-primary">Faça sua Reserva</a>
+            <a href="tel:+551133334444" class="btn btn-secondary">Ligar Agora</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Nossa História</a></li>
+                    <li><a href="#">Responsabilidade Social</a></li>
+                    <li><a href="#">Ética e Conformidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="#services">Transfers</a></li>
+                    <li><a href="#services">Transfers Aeroporto</a></li>
+                    <li><a href="#services">Serviços VIP</a></li>
+                    <li><a href="#services">Soluções Corporativas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Para Negócios</h4>
+                <ul>
+                    <li><a href="#">Solução Empresarial</a></li>
+                    <li><a href="#">Fazer Login</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="tel:+551133334444">+55 11 3333-4444</a></li>
+                    <li><a href="mailto:contato@transfershuttle.com.br">contato@transfershuttle.com.br</a></li>
+                    <li><a href="#">Central de Atendimento</a></li>
+                    <li><a href="#">WhatsApp Business</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Transfer & Shuttle Brazil. Todos os direitos reservados. | 
+            <a href="#" style="color: #ccc;">Termos de Serviço</a> | 
+            <a href="#" style="color: #ccc;">Política de Privacidade</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
