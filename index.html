@@ -3,299 +3,723 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Transfer & Shuttle Brazil - Serviços de transporte premium em todo o Brasil. Ônibus, transfers e serviços VIP.">
-    <meta name="keywords" content="transfer, shuttle, transporte, Brasil, aeroporto, premium">
-    <meta property="og:title" content="Transfer & Shuttle Brazil - Transporte Premium">
-    <meta property="og:description" content="Serviços de transporte de qualidade em todo o Brasil">
-    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta name="description" content="TS Brazil - Transfer Shuttle oferece serviços de transporte executivo de luxo com motoristas qualificados, frota de classe mundial e pontualidade garantida. Transfers aeroportuários, city tours e serviços personalizados.">
+    <meta name="keywords" content="transfer executivo, transporte de luxo, motorista particular, transfer aeroporto, limousine São Paulo, chauffeur service Brazil">
+    <meta name="author" content="TS Brazil - Transfer Shuttle">
+    <meta name="robots" content="index, follow">
     
-    <title>Transfer & Shuttle Brazil - Transporte Premium em todo o Brasil</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://transfershuttlebrazil.com/">
+    <meta property="og:title" content="TS Brazil - Transfer Shuttle | Transporte Executivo de Luxo">
+    <meta property="og:description" content="Serviços de transporte executivo de luxo com motoristas qualificados e frota de classe mundial. Pontualidade garantida.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://transfershuttlebrazil.com/">
+    <meta property="twitter:title" content="TS Brazil - Transfer Shuttle | Transporte Executivo de Luxo">
+    <meta property="twitter:description" content="Serviços de transporte executivo de luxo com motoristas qualificados e frota de classe mundial.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200">
+    
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="pt-BR" href="https://transfershuttlebrazil.com/" />
+    <link rel="alternate" hreflang="en" href="https://transfershuttlebrazil.com/en" />
+    <link rel="alternate" hreflang="es" href="https://transfershuttlebrazil.com/es" />
+    <link rel="alternate" hreflang="x-default" href="https://transfershuttlebrazil.com/" />
+    
+    <link rel="canonical" href="https://transfershuttlebrazil.com/">
+    
+    <title>TS Brazil - Transfer Shuttle | Transporte Executivo de Luxo em São Paulo</title>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "TS Brazil - Transfer Shuttle",
+      "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200",
+      "@id": "https://transfershuttlebrazil.com",
+      "url": "https://transfershuttlebrazil.com",
+      "telephone": "+551123711500",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.5505,
+        "longitude": -46.6333
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://wa.me/5511989178312"
+      ],
+      "priceRange": "$$$$"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #000;
+            --secondary-color: #d4af37;
+            --text-light: #fff;
+            --text-dark: #333;
+            --bg-light: #f4f4f4;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+        
+        header {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .languages {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .languages img {
+            width: 24px;
+            height: 18px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            border: 1px solid transparent;
+        }
+        
+        .languages img:hover {
+            transform: scale(1.1);
+            border-color: var(--secondary-color);
+        }
+        
+        section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        #home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: var(--text-light);
+            margin-top: 60px;
+        }
+        
+        .home-content {
+            flex: 1;
+            max-width: 50%;
+        }
+        
+        .home-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+            line-height: 1.2;
+        }
+        
+        .home-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .quotation-form {
+            flex: 1;
+            max-width: 45%;
+            background: var(--text-light);
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            color: var(--text-dark);
+        }
+        
+        .quotation-form h2 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        
+        form label {
+            display: block;
+            margin: 0.8rem 0 0.3rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        form input,
+        form select {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        form input:focus,
+        form select:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+        
+        .submit-btn {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            margin-top: 1rem;
+        }
+        
+        .submit-btn:hover {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .section-intro {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            color: #666;
+        }
+        
+        .fleet-grid,
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .vehicle,
+        .service-card {
+            background: var(--text-light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .vehicle:hover,
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .vehicle img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .vehicle-info,
+        .service-info {
+            padding: 1.5rem;
+        }
+        
+        .vehicle h3,
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary-color);
+        }
+        
+        .vehicle p,
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .service-card {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 1rem;
+        }
+        
+        #quotation {
+            background: var(--bg-light);
+            text-align: center;
+        }
+        
+        .cta-link {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .cta-link:hover {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        
+        footer {
+            background: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+        }
+        
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s, transform 0.3s;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        #returnFields {
+            display: none;
+        }
+        
+        @media (max-width: 968px) {
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            #home {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .home-content,
+            .quotation-form {
+                max-width: 100%;
+            }
+            
+            .home-content h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .fleet-grid,
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            section {
+                padding: 4rem 1rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 28px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- HEADER & NAVIGATION -->
     <header>
         <nav>
-            <a href="#" class="logo">Transfer & <span>Shuttle</span> Brazil</a>
-            <ul class="nav-menu">
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#booking">Reservar</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact" class="cta-button">Contato</a></li>
+            <div class="logo">TS BRAZIL</div>
+            <ul>
+                <li><a href="#home" data-pt="Início" data-en="Home" data-es="Inicio">Início</a></li>
+                <li><a href="#fleet" data-pt="Frota" data-en="Fleet" data-es="Flota">Frota</a></li>
+                <li><a href="#services" data-pt="Serviços" data-en="Services" data-es="Servicios">Serviços</a></li>
+                <li><a href="#quotation" data-pt="Orçamento" data-en="Quotation" data-es="Presupuesto">Orçamento</a></li>
+                <li class="languages">
+                    <img src="https://flagcdn.com/w20/br.png" alt="Português" onclick="setLanguage('pt')" title="Português">
+                    <img src="https://flagcdn.com/w20/gb.png" alt="English" onclick="setLanguage('en')" title="English">
+                    <img src="https://flagcdn.com/w20/es.png" alt="Español" onclick="setLanguage('es')" title="Español">
+                </li>
             </ul>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Elevando Cada Jornada</h1>
-            <p>Seu parceiro confiável para transporte premium em todo o Brasil. Ônibus, transfers e serviços VIP com conforto e segurança.</p>
-            <a href="#booking" class="btn btn-primary">Reservar Agora</a>
-            <a href="#contact" class="btn btn-secondary">Falar com Especialista</a>
+    <section id="home">
+        <div class="home-content">
+            <h1 data-pt="Transporte Executivo de Luxo" data-en="Executive Luxury Transportation" data-es="Transporte Ejecutivo de Lujo">Transporte Executivo de Luxo</h1>
+            <p data-pt="Com mais de 15 anos de experiência em transporte de luxo, a TS Brazil oferece serviços impecáveis com motoristas profissionais. Nosso compromisso é garantir que cada passageiro receba o mesmo nível de atendimento personalizado e exclusivo, redefinindo sua experiência de mobilidade com sofisticação e pontualidade." data-en="With over 15 years of experience in luxury transportation, TS Brazil offers impeccable services with professional drivers. Our commitment is to ensure that each passenger receives the same level of personalized and exclusive service, redefining your mobility experience with sophistication and punctuality." data-es="Con más de 15 años de experiencia en transporte de lujo, TS Brazil ofrece servicios impecables con conductores profesionales. Nuestro compromisso es garantizar que cada pasajero reciba el mismo nivel de atención personalizada y exclusiva, redefiniendo su experiencia de movilidad con sofisticación y puntualidad.">Com mais de 15 anos de experiência em transporte de luxo, a TS Brazil oferece serviços impecáveis com motoristas profissionais. Nosso compromisso é garantir que cada passageiro receba o mesmo nível de atendimento personalizado e exclusivo, redefinindo sua experiência de mobilidade com sofisticação e pontualidade.</p>
+            <p data-pt="Contamos com uma frota de classe mundial, veículos modernos e um time de motoristas altamente treinados, combinados com sistemas avançados de reserva. Oferecemos um portfólio completo de gerenciamento de transporte de luxo e logística, garantindo que cada detalhe de sua jornada seja tratado com a máxima excelência." data-en="We have a world-class fleet, modern vehicles and a team of highly trained drivers, combined with advanced booking systems. We offer a complete portfolio of luxury transportation and logistics management, ensuring that every detail of your journey is handled with the utmost excellence." data-es="Contamos con una flota de clase mundial, vehículos modernos y un equipo de conductores altamente capacitados, combinados con sistemas avanzados de reserva. Ofrecemos un portafolio completo de gestión de transporte de lujo y logística, garantizando que cada detalle de su viaje sea tratado con la máxima excelencia.">Contamos com uma frota de classe mundial, veículos modernos e um time de motoristas altamente treinados, combinados com sistemas avançados de reserva. Oferecemos um portfólio completo de gerenciamento de transporte de luxo e logística, garantindo que cada detalhe de sua jornada seja tratado com a máxima excelência.</p>
         </div>
-    </section>
+        <div class="quotation-form">
+            <h2 data-pt="Solicite um Orçamento" data-en="Request a Quote" data-es="Solicite un Presupuesto">Solicite um Orçamento</h2>
+            <form id="quoteForm" onsubmit="sendEmail(event)">
+                <label for="service" data-pt="Serviço:" data-en="Service:" data-es="Servicio:">Serviço:</label>
+                <select id="service" name="Service" required>
+                    <option value="Transfer">Transfer</option>
+                    <option value="Disposal">Disposal</option>
+                </select>
 
-    <!-- SERVICES SECTION -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Nossos <span>Serviços</span></h2>
-            
-            <div class="services-grid">
-                <!-- Service 1: Transfers -->
-                <div class="service-card">
-                    <div class="service-icon">🚐</div>
-                    <h3>Transfers</h3>
-                    <p>Transporte confortável de um ponto a outro com segurança e pontualidade garantidas.</p>
-                    <a href="#booking">Saiba mais →</a>
+                <label for="vehicle" data-pt="Veículo:" data-en="Vehicle:" data-es="Vehículo:">Veículo:</label>
+                <select id="vehicle" name="Vehicle" required>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Minivan">Minivan</option>
+                    <option value="Van">Van</option>
+                    <option value="Bus">Bus</option>
+                </select>
+
+                <label for="bulletproof" data-pt="Blindado:" data-en="Bulletproof:" data-es="Blindado:">Blindado:</label>
+                <select id="bulletproof" name="BulletProof" required>
+                    <option value="No" data-pt="Não" data-en="No" data-es="No">Não</option>
+                    <option value="Yes" data-pt="Sim" data-en="Yes" data-es="Sí">Sim</option>
+                </select>
+
+                <label for="driver" data-pt="Motorista:" data-en="Driver:" data-es="Conductor:">Motorista:</label>
+                <select id="driver" name="Driver" required>
+                    <option value="Monolingual" data-pt="Monolíngue" data-en="Monolingual" data-es="Monolingüe">Monolíngue</option>
+                    <option value="Bilingual" data-pt="Bilíngue" data-en="Bilingual" data-es="Bilingüe">Bilíngue</option>
+                </select>
+
+                <label for="passengers" data-pt="Número de Passageiros:" data-en="Number of Passengers:" data-es="Número de Pasajeros:">Número de Passageiros:</label>
+                <input type="number" id="passengers" name="Number of Passengers" min="1" required>
+
+                <label for="pickupDate" data-pt="Data de Retirada:" data-en="Pickup Date:" data-es="Fecha de Recogida:">Data de Retirada:</label>
+                <input type="text" id="pickupDate" name="Date of Pickup" placeholder="DD/MM/YYYY" required>
+
+                <label for="pickupTime" data-pt="Hora de Retirada:" data-en="Pickup Time:" data-es="Hora de Recogida:">Hora de Retirada:</label>
+                <input type="time" id="pickupTime" name="Time of Pickup" required>
+
+                <label for="roundtrip" data-pt="Ida e Volta:" data-en="Roundtrip:" data-es="Ida y Vuelta:">Ida e Volta:</label>
+                <select id="roundtrip" name="Roundtrip" onchange="toggleRoundtrip()" required>
+                    <option value="No" data-pt="Não" data-en="No" data-es="No">Não</option>
+                    <option value="Yes" data-pt="Sim" data-en="Yes" data-es="Sí">Sim</option>
+                </select>
+
+                <div id="returnFields">
+                    <label for="returnDate" data-pt="Data de Retorno:" data-en="Return Date:" data-es="Fecha de Retorno:">Data de Retorno:</label>
+                    <input type="text" id="returnDate" name="Return Date" placeholder="DD/MM/YYYY">
+
+                    <label for="returnTime" data-pt="Hora de Retorno:" data-en="Return Time:" data-es="Hora de Retorno:">Hora de Retorno:</label>
+                    <input type="time" id="returnTime" name="Return Time">
                 </div>
 
-                <!-- Service 2: Airport Transfers -->
-                <div class="service-card">
-                    <div class="service-icon">✈️</div>
-                    <h3>Transfers Aeroporto</h3>
-                    <p>Serviço especializado para aeroportos com assistência 24/7 e pontualidade garantida.</p>
-                    <a href="#booking">Saiba mais →</a>
-                </div>
+                <label for="pickupLoc" data-pt="Local de Retirada:" data-en="Pickup Location:" data-es="Lugar de Recogida:">Local de Retirada:</label>
+                <input type="text" id="pickupLoc" name="PICK UP LOCATION" placeholder="Bairro ou Endereço" required>
 
-                <!-- Service 3: By the Hour -->
-                <div class="service-card">
-                    <div class="service-icon">⏰</div>
-                    <h3>Transporte por Hora</h3>
-                    <p>Aluguel de ônibus/van por hora para eventos, passeios e excursões.</p>
-                    <a href="#booking">Saiba mais →</a>
-                </div>
+                <label for="dropoffLoc" data-pt="Local de Destino:" data-en="Drop-off Location:" data-es="Lugar de Destino:">Local de Destino:</label>
+                <input type="text" id="dropoffLoc" name="DROP OFF LOCATION" placeholder="Bairro ou Endereço" required>
 
-                <!-- Service 4: Shuttle Service -->
-                <div class="service-card">
-                    <div class="service-icon">🚌</div>
-                    <h3>Serviço Shuttle</h3>
-                    <p>Transporte contínuo e confiável para grupos e passageiros frequentes.</p>
-                    <a href="#booking">Saiba mais →</a>
-                </div>
+                <label for="client" data-pt="Cliente:" data-en="Client:" data-es="Cliente:">Cliente:</label>
+                <select id="client" name="Client" required>
+                    <option value="Private" data-pt="Privado" data-en="Private" data-es="Privado">Privado</option>
+                    <option value="Corporate" data-pt="Corporativo" data-en="Corporate" data-es="Corporativo">Corporativo</option>
+                </select>
 
-                <!-- Service 5: VIP Services -->
-                <div class="service-card">
-                    <div class="service-icon">👔</div>
-                    <h3>Serviços VIP</h3>
-                    <p>Atendimento premium com serviços personalizados para clientes exclusivos.</p>
-                    <a href="#booking">Saiba mais →</a>
-                </div>
-
-                <!-- Service 6: Corporate Solutions -->
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Soluções Corporativas</h3>
-                    <p>Pacotes customizados para empresas com frota gerenciada e suporte dedicado.</p>
-                    <a href="#booking">Saiba mais →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BOOKING SECTION -->
-    <section id="booking" class="booking">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">Reserve Agora</h2>
-            
-            <form class="booking-form">
-                <h2>Faça sua reserva em 3 passos simples</h2>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="service">Tipo de Serviço</label>
-                        <select id="service" name="service" required>
-                            <option value="">Selecione um serviço</option>
-                            <option value="transfer">Transfer</option>
-                            <option value="airport">Transfer Aeroporto</option>
-                            <option value="hourly">Por Hora</option>
-                            <option value="shuttle">Shuttle</option>
-                            <option value="vip">VIP</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="pickup-date">Data de Saída</label>
-                        <input type="date" id="pickup-date" name="pickup-date" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="pickup-time">Hora de Saída</label>
-                        <input type="time" id="pickup-time" name="pickup-time" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="pickup-location">Local de Saída</label>
-                        <input type="text" id="pickup-location" name="pickup-location" placeholder="Digite o local de saída" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="dropoff-location">Local de Chegada</label>
-                        <input type="text" id="dropoff-location" name="dropoff-location" placeholder="Digite o local de chegada" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="passengers">Número de Passageiros</label>
-                        <input type="number" id="passengers" name="passengers" min="1" max="60" value="1" required>
-                    </div>
-                </div>
-
-                <div class="form-submit">
-                    <button type="submit" class="btn btn-primary">Buscar Disponibilidade</button>
-                </div>
+                <button type="submit" class="submit-btn" data-pt="Enviar Solicitação" data-en="Send Request" data-es="Enviar Solicitud">Enviar Solicitação</button>
             </form>
         </div>
     </section>
 
-    <!-- WHY CHOOSE US -->
-    <section id="about" class="features">
-        <div class="container">
-            <h2 class="section-title">Por que escolher <span>Transfer & Shuttle Brazil</span>?</h2>
-            
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-number">1️⃣</div>
-                    <h3>Fácil de Usar</h3>
-                    <p>Reserve em apenas 3 passos simples com nossa plataforma intuitiva.</p>
+    <section id="fleet">
+        <h2 data-pt="Nossa Frota de Luxo" data-en="Our Luxury Fleet" data-es="Nuestra Flota de Lujo">Nossa Frota de Luxo</h2>
+        <p class="section-intro" data-pt="Frota de classe mundial com os veículos mais recentes e modernos do mercado para oferecer sempre o melhor aos nossos clientes." data-en="World-class fleet with the latest and most modern vehicles on the market to always offer the best to our customers." data-es="Flota de clase mundial con los vehículos más recientes y modernos del mercado para ofrecer siempre lo mejor a nuestros clientes.">Frota de classe mundial com os veículos mais recentes e modernos do mercado para oferecer sempre o melhor aos nossos clientes.</p>
+        <div class="fleet-grid">
+            <div class="vehicle">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600" alt="Sedan de Luxo">
+                <div class="vehicle-info">
+                    <h3>Sedan</h3>
+                    <p data-pt="Elegante e confortável, perfeito para transfers executivos e viagens de negócios. Comporta até 3 passageiros com amplo espaço para bagagens." data-en="Elegant and comfortable, perfect for executive transfers and business trips. Accommodates up to 3 passengers with ample luggage space." data-es="Elegante y cómodo, perfecto para traslados ejecutivos y viajes de negocios. Acomoda hasta 3 pasajeros con amplio espacio para equipaje.">Elegante e confortável, perfeito para transfers executivos e viagens de negócios. Comporta até 3 passageiros com amplo espaço para bagagens.</p>
                 </div>
-
-                <div class="feature">
-                    <div class="feature-number">2️⃣</div>
-                    <h3>Eficiente</h3>
-                    <p>Serviços personalizados cuidadosamente planejados para sua comodidade.</p>
+            </div>
+            <div class="vehicle">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600" alt="SUV de Luxo">
+                <div class="vehicle-info">
+                    <h3>SUV</h3>
+                    <p data-pt="Espaçoso e luxuoso para grupos pequenos, ideal para famílias ou executivos que buscam mais conforto e espaço. Comporta até 6 passageiros." data-en="Spacious and luxurious for small groups, ideal for families or executives seeking more comfort and space. Accommodates up to 6 passengers." data-es="Espacioso y lujoso para grupos pequeños, ideal para familias o ejecutivos que buscan más comodidad y espacio. Acomoda hasta 6 pasajeros.">Espaçoso e luxuoso para grupos pequenos, ideal para famílias ou executivos que buscam mais conforto e espaço. Comporta até 6 passageiros.</p>
                 </div>
-
-                <div class="feature">
-                    <div class="feature-number">3️⃣</div>
-                    <h3>Confiável</h3>
-                    <p>Pontuais, seguros e com rigoroso controle de qualidade em todos os serviços.</p>
+            </div>
+            <div class="vehicle">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600" alt="Minivan">
+                <div class="vehicle-info">
+                    <h3>Minivan</h3>
+                    <p data-pt="Ideal para grupos médios e famílias, oferecendo amplo espaço interno e conforto premium. Perfeita para city tours e eventos. Até 7 passageiros." data-en="Ideal for medium groups and families, offering ample interior space and premium comfort. Perfect for city tours and events. Up to 7 passengers." data-es="Ideal para grupos medianos y familias, ofreciendo amplio espacio interior y comodidad premium. Perfecta para tours por la ciudad y eventos. Hasta 7 pasajeros.">Ideal para grupos médios e famílias, oferecendo amplo espaço interno e conforto premium. Perfeita para city tours e eventos. Até 7 passageiros.</p>
                 </div>
-
-                <div class="feature">
-                    <div class="feature-number">4️⃣</div>
-                    <h3>Global</h3>
-                    <p>Cobertura em todo o Brasil com frota moderna e suporte 24/7.</p>
+            </div>
+            <div class="vehicle">
+                <img src="https://images.unsplash.com/photo-1590802183534-d8992c8b6d8b?w=600" alt="Van Executiva">
+                <div class="vehicle-info">
+                    <h3>Van</h3>
+                    <p data-pt="Grande capacidade para grupos de até 14 passageiros, mantendo o conforto e elegância. Ideal para eventos corporativos e grupos turísticos." data-en="Large capacity for groups of up to 14 passengers, maintaining comfort and elegance. Ideal for corporate events and tourist groups." data-es="Gran capacidad para grupos de hasta 14 pasajeros, manteniendo la comodidad y elegancia. Ideal para eventos corporativos y grupos turísticos.">Grande capacidade para grupos de até 14 passageiros, mantendo o conforto e elegância. Ideal para eventos corporativos e grupos turísticos.</p>
+                </div>
+            </div>
+            <div class="vehicle">
+                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600" alt="Ônibus Executivo">
+                <div class="vehicle-info">
+                    <h3>Bus</h3>
+                    <p data-pt="Para grupos grandes e eventos especiais, oferecendo conforto premium e todas as comodidades necessárias. Capacidade para até 40 passageiros." data-en="For large groups and special events, offering premium comfort and all necessary amenities. Capacity for up to 40 passengers." data-es="Para grupos grandes y eventos especiales, ofreciendo comodidad premium y todas las comodidades necesarias. Capacidad para hasta 40 pasajeros.">Para grupos grandes e eventos especiais, oferecendo conforto premium e todas as comodidades necessárias. Capacidade para até 40 passageiros.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- STATS SECTION -->
-    <section class="stats">
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">27</div>
-                <div class="stat-label">Estados Cobertos</div>
+    <section id="services">
+        <h2 data-pt="Nossos Serviços" data-en="Our Services" data-es="Nuestros Servicios">Nossos Serviços</h2>
+        <p class="section-intro" data-pt="Serviços personalizados de transporte de luxo para atender todas as suas necessidades de mobilidade com excelência e pontualidade." data-en="Customized luxury transportation services to meet all your mobility needs with excellence and punctuality." data-es="Servicios personalizados de transporte de lujo para satisfacer todas sus necesidades de movilidad con excelencia y puntualidad.">Serviços personalizados de transporte de luxo para atender todas as suas necessidades de mobilidade com excelência e pontualidade.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3 data-pt="Transfers Aeroportuários" data-en="Airport Transfers" data-es="Traslados Aeroportuarios">Transfers Aeroportuários</h3>
+                <p data-pt="Serviço de transfer porta a porta com monitoramento de voos em tempo real. Serviço de meet & greet disponível para chegadas internacionais. Pontualidade garantida." data-en="Door-to-door transfer service with real-time flight monitoring. Meet & greet service available for international arrivals. Guaranteed punctuality." data-es="Servicio de traslado puerta a puerta con monitoreo de vuelos en tiempo real. Servicio de meet & greet disponible para llegadas internacionales. Puntualidad garantizada.">Serviço de transfer porta a porta com monitoramento de voos em tempo real. Serviço de meet & greet disponível para chegadas internacionais. Pontualidade garantida.</p>
             </div>
-
-            <div class="stat-card">
-                <div class="stat-number">500</div>
-                <div class="stat-label">Cidades Atendidas</div>
+            <div class="service-card">
+                <h3 data-pt="Aviação Privada" data-en="Private Aviation" data-es="Aviación Privada">Aviação Privada</h3>
+                <p data-pt="Serviços especializados para terminais de aviação privada. Profissionais dedicados com rastreamento de voos online em tempo real para garantir pontualidade absoluta." data-en="Specialized services for private aviation terminals. Dedicated professionals with real-time online flight tracking to ensure absolute punctuality." data-es="Servicios especializados para terminales de aviación privada. Profesionales dedicados con seguimiento de vuelos en línea en tiempo real para garantizar puntualidad absoluta.">Serviços especializados para terminais de aviação privada. Profissionais dedicados com rastreamento de voos online em tempo real para garantir pontualidade absoluta.</p>
             </div>
-
-            <div class="stat-card">
-                <div class="stat-number">150</div>
-                <div class="stat-label">Aeroportos</div>
+            <div class="service-card">
+                <h3 data-pt="Hora em Hora" data-en="By the Hour" data-es="Por Hora">Hora em Hora</h3>
+                <p data-pt="Motorista à sua disposição pelo tempo necessário. Flexibilidade para múltiplos destinos durante o percurso sem necessidade de planejamento prévio." data-en="Driver at your disposal for as long as needed. Flexibility for multiple destinations during the route without prior planning." data-es="Conductor a su disposición por el tiempo necesario. Flexibilidad para múltiples destinos durante el recorrido sin planificación previa.">Motorista à sua disposição pelo tempo necessário. Flexibilidade para múltiplos destinos durante o percurso sem necessidade de planejamento prévio.</p>
             </div>
-
-            <div class="stat-card">
-                <div class="stat-number">10000</div>
-                <div class="stat-label">Passageiros Mensais</div>
+            <div class="service-card">
+                <h3 data-pt="Serviços Corporativos" data-en="Corporate Services" data-es="Servicios Corporativos">Serviços Corporativos</h3>
+                <p data-pt="Conta corporativa com gerente dedicado. Reservas 24/7 com ajustes flexíveis de itinerário. Ideal para empresas que necessitam transporte executivo regular." data-en="Corporate account with dedicated manager. 24/7 bookings with flexible itinerary adjustments. Ideal for companies requiring regular executive transportation." data-es="Cuenta corporativa con gerente dedicado. Reservas 24/7 con ajustes flexibles de itinerario. Ideal para empresas que requieren transporte ejecutivo regular.">Conta corporativa com gerente dedicado. Reservas 24/7 com ajustes flexíveis de itinerário. Ideal para empresas que necessitam transporte executivo regular.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- CLIENT TESTIMONIALS -->
-    <section class="features" style="background: white;">
-        <div class="container">
-            <h2 class="section-title">O que nossos clientes <span>dizem</span></h2>
-            
-            <div class="services-grid" style="margin-top: 50px;">
-                <div class="service-card">
-                    <p style="font-style: italic; margin-bottom: 20px;">"Excelente serviço, pontualidade impecável. Recomendo para todos!"</p>
-                    <strong>João Silva</strong>
-                    <p style="color: #999; font-size: 0.9em;">Executivo em São Paulo</p>
-                </div>
-
-                <div class="service-card">
-                    <p style="font-style: italic; margin-bottom: 20px;">"Conforto e segurança garantidos. A melhor opção para transfers aeroporto."</p>
-                    <strong>Maria Santos</strong>
-                    <p style="color: #999; font-size: 0.9em;">Executiva em Rio de Janeiro</p>
-                </div>
-
-                <div class="service-card">
-                    <p style="font-style: italic; margin-bottom: 20px;">"Serviço profissional, excelentes condições dos veículos. Voltaria com certeza!"</p>
-                    <strong>Carlos Costa</strong>
-                    <p style="color: #999; font-size: 0.9em;">Turista em Minas Gerais</p>
-                </div>
+            <div class="service-card">
+                <h3 data-pt="City Tours" data-en="City Tours" data-es="Tours por la Ciudad">City Tours</h3>
+                <p data-pt="Explore atrações turísticas e locais icônicos no conforto de um veículo de luxo com motorista. Total privacidade para apreciar cada momento da sua jornada." data-en="Explore tourist attractions and iconic locations in the comfort of a luxury vehicle with driver. Total privacy to enjoy every moment of your journey." data-es="Explore atracciones turísticas y lugares icónicos en la comodidad de un vehículo de lujo con conductor. Total privacidad para disfrutar cada momento de su viaje.">Explore atrações turísticas e locais icônicos no conforto de um veículo de luxo com motorista. Total privacidade para apreciar cada momento da sua jornada.</p>
+            </div>
+            <div class="service-card">
+                <h3 data-pt="Roadshows e Eventos" data-en="Roadshows & Events" data-es="Roadshows y Eventos">Roadshows e Eventos</h3>
+                <p data-pt="Coordenação completa de transporte para eventos, conferências e roadshows. Desde pequenas reuniões executivas até grandes eventos com milhares de participantes." data-en="Complete transportation coordination for events, conferences and roadshows. From small executive meetings to large events with thousands of participants." data-es="Coordinación completa de transporte para eventos, conferencias y roadshows. Desde pequeñas reuniones ejecutivas hasta grandes eventos con miles de participantes.">Coordenação completa de transporte para eventos, conferências e roadshows. Desde pequenas reuniões executivas até grandes eventos com milhares de participantes.</p>
+            </div>
+            <div class="service-card">
+                <h3 data-pt="Viagens de Longa Distância" data-en="Long Distance Travel" data-es="Viajes de Larga Distancia">Viagens de Longa Distância</h3>
+                <p data-pt="Transporte premium para viagens longas com motorista profissional licenciado. Conforto e recursos tecnológicos para trabalhar ou relaxar durante o trajeto." data-en="Premium transportation for long trips with licensed professional driver. Comfort and technological features to work or relax during the journey." data-es="Transporte premium para viajes largos con conductor profesional licenciado. Comodidad y recursos tecnológicos para trabajar o relajarse durante el trayecto.">Transporte premium para viagens longas com motorista profissional licenciado. Conforto e recursos tecnológicos para trabalhar ou relaxar durante o trajeto.</p>
+            </div>
+            <div class="service-card">
+                <h3 data-pt="Serviço Global" data-en="Global Service" data-es="Servicio Global">Serviço Global</h3>
+                <p data-pt="Mesmo nível de excelência em qualquer lugar do mundo. Rede global de parceiros para garantir o padrão TS Brazil em todas as principais cidades internacionais." data-en="Same level of excellence anywhere in the world. Global network of partners to ensure TS Brazil standard in all major international cities." data-es="Mismo nivel de excelencia en cualquier parte del mundo. Red global de socios para garantizar el estándar TS Brazil en todas las principales ciudades internacionales.">Mesmo nível de excelência em qualquer lugar do mundo. Rede global de parceiros para garantir o padrão TS Brazil em todas as principais cidades internacionais.</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA SECTION -->
-    <section id="contact" class="cta">
-        <div class="container">
-            <h2>Pronto para elevar sua jornada?</h2>
-            <p>Reserve agora e experimente o melhor em transporte premium no Brasil.</p>
-            <a href="#booking" class="btn btn-primary">Faça sua Reserva</a>
-            <a href="tel:+551133334444" class="btn btn-secondary">Ligar Agora</a>
-        </div>
+    <section id="quotation">
+        <h2 data-pt="Solicite seu Orçamento" data-en="Request Your Quote" data-es="Solicite su Presupuesto">Solicite seu Orçamento</h2>
+        <p class="section-intro" data-pt="Preencha o formulário na seção Home para receber um orçamento personalizado para suas necessidades de transporte executivo." data-en="Fill out the form in the Home section to receive a personalized quote for your executive transportation needs." data-es="Complete el formulario en la sección Home para recibir un presupuesto personalizado para sus necesidades de transporte ejecutivo.">Preencha o formulário na seção Home para receber um orçamento personalizado para suas necessidades de transporte executivo.</p>
+        <a href="#home" class="cta-link" data-pt="Solicitar Orçamento Agora" data-en="Request Quote Now" data-es="Solicitar Presupuesto Ahora">Solicitar Orçamento Agora</a>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Sobre Nós</h4>
-                <ul>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Nossa História</a></li>
-                    <li><a href="#">Responsabilidade Social</a></li>
-                    <li><a href="#">Ética e Conformidade</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Serviços</h4>
-                <ul>
-                    <li><a href="#services">Transfers</a></li>
-                    <li><a href="#services">Transfers Aeroporto</a></li>
-                    <li><a href="#services">Serviços VIP</a></li>
-                    <li><a href="#services">Soluções Corporativas</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Para Negócios</h4>
-                <ul>
-                    <li><a href="#">Solução Empresarial</a></li>
-                    <li><a href="#">Fazer Login</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">API</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Contato</h4>
-                <ul>
-                    <li><a href="tel:+551133334444">+55 11 3333-4444</a></li>
-                    <li><a href="mailto:contato@transfershuttle.com.br">contato@transfershuttle.com.br</a></li>
-                    <li><a href="#">Central de Atendimento</a></li>
-                    <li><a href="#">WhatsApp Business</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Transfer & Shuttle Brazil. Todos os direitos reservados. | 
-            <a href="#" style="color: #ccc;">Termos de Serviço</a> | 
-            <a href="#" style="color: #ccc;">Política de Privacidade</a></p>
-        </div>
+        <h3>TS Brazil - Transfer Shuttle</h3>
+        <p data-pt="Telefone: +55 11 2371-1500" data-en="Phone: +55 11 2371-1500" data-es="Teléfono: +55 11 2371-1500">Telefone: +55 11 2371-1500</p>
+        <p>WhatsApp: <a href="https://wa.me/5511989178312">+55 11 98917-8312</a></p>
+        <p>Email: <a href="mailto:contact@transfershuttlebrazil.com">contact@transfershuttlebrazil.com</a></p>
+        <p data-pt="© 2025 TS Brazil. Todos os direitos reservados." data-en="© 2025 TS Brazil. All rights reserved." data-es="© 2025 TS Brazil. Todos los derechos reservados.">© 2025 TS Brazil. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <a href="https://wa.me/5511989178312?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20transporte%20executivo." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        💬
+    </a>
+
+    <script>
+        let currentLang = 'pt';
+        
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('[data-pt]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) {
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = text;
+                    } else if (el.tagName === 'OPTION') {
+                        el.textContent = text;
+                    } else {
+                        el.textContent = text;
+                    }
+                }
+            });
+            
+            // Update HTML lang attribute
+            document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang === 'en' ? 'en' : 'es';
+            
+            // Update meta description
+            const descriptions = {
+                pt: 'TS Brazil - Transfer Shuttle oferece serviços de transporte executivo de luxo com motoristas qualificados, frota de classe mundial e pontualidade garantida. Transfers aeroportuários, city tours e serviços personalizados.',
+                en: 'TS Brazil - Transfer Shuttle offers executive luxury transportation services with qualified drivers, world-class fleet and guaranteed punctuality. Airport transfers, city tours and personalized services.',
+                es: 'TS Brazil - Transfer Shuttle ofrece servicios de transporte ejecutivo de lujo con conductores calificados, flota de clase mundial y puntualidad garantizada. Traslados aeroportuarios, city tours y servicios personalizados.'
+            };
+            document.querySelector('meta[name="description"]').setAttribute('content', descriptions[lang]);
+            
+            // Update title
+            const titles = {
+                pt: 'TS Brazil - Transfer Shuttle | Transporte Executivo de Luxo em São Paulo',
+                en: 'TS Brazil - Transfer Shuttle | Executive Luxury Transportation in São Paulo',
+                es: 'TS Brazil - Transfer Shuttle | Transporte Ejecutivo de Lujo en São Paulo'
+            };
+            document.title = titles[lang];
+        }
+        
+        function toggleRoundtrip() {
+            const roundtrip = document.getElementById('roundtrip').value;
+            const returnFields = document.getElementById('returnFields');
+            returnFields.style.display = roundtrip === 'Yes' ? 'block' : 'none';
+            
+            const returnDate = document.getElementById('returnDate');
+            const returnTime = document.getElementById('returnTime');
+            
+            if (roundtrip === 'Yes') {
+                returnDate.required = true;
+                returnTime.required = true;
+            } else {
+                returnDate.required = false;
+                returnTime.required = false;
+            }
+        }
+        
+        function sendEmail(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('quoteForm');
+            const formData = new FormData(form);
+            
+            let emailBody = 'SOLICITAÇÃO DE ORÇAMENTO - TS BRAZIL%0D%0A%0D%0A';
+            
+            for (let [key, value] of formData.entries()) {
+                if (key === 'Return Date' || key === 'Return Time') {
+                    if (document.getElementById('roundtrip').value === 'Yes') {
+                        emailBody += `${key}: ${value}%0D%0A`;
+                    }
+                } else {
+                    emailBody += `${key}: ${value}%0D%0A`;
+                }
+            }
+            
+            window.location.href = `mailto:contact@transfershuttlebrazil.com?subject=Solicitação de Orçamento - TS Brazil&body=${emailBody}`;
+            
+            return false;
+        }
+        
+        // Initialize with Portuguese
+        setLanguage('pt');
+    </script>
 </body>
 </html>
